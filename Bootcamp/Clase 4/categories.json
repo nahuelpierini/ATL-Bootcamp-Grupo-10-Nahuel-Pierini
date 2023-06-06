@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Programacion",
+    "description": "Preguntas relacionadas con la programacion."
+  },
+  {
+    "category": "Futbol",
+    "description": "Preguntas relacionadas con el futbol."
+  },
+  {
+    "category": "Arte",
+    "description": "Preguntas relacionadas con arte."
+  },
+  {
+    "category": "Cine",
+    "description": "Preguntas relacionadas con películas, directores, actores y otros aspectos del cine."
+  },
+  {
+    "category": "Paises",
+    "description": "Preguntas relacionadas con paises."
+  },
+  {
+    "category": "Medicina",
+    "description": "Preguntas relacionadas con medicina."
+  }
+]

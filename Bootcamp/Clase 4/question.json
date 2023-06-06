@@ -1,0 +1,11 @@
+{
+  "category": "Futbol",
+  "question": "¿Que equipo gano mas champions?",
+  "options": [
+    "Bayer Munich",
+    "Barcelona",
+    "Real Madrid"
+  ],
+  "answer": 2,
+  "explanation": "El Madrid tiene en su poder 14 titulos."
+}
