@@ -12,8 +12,6 @@ public class PiedraPapelTijera {
         eleccionComputadora(computadora);
 
         ganador(jugador,computadora);
-
-
     }
 
     public static void ganador(int jugador, int computadora){

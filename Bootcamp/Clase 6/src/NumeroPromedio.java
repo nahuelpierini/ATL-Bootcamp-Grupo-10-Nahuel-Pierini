@@ -14,8 +14,10 @@ public class NumeroPromedio {
 
         float promedio = ((numero1 + numero3 + numero2) / 3);
 
-
         System.out.printf("El promedio de los 3 numeros ingresados es: %.2f\n ", promedio );
+    }
+
+    public static void ingreseTresNumeros(){
 
     }
 }
