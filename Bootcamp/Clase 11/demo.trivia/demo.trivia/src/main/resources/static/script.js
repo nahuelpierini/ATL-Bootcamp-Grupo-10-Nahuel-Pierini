@@ -19,10 +19,11 @@ $(document).ready(function() {
 	$('.spin-button').click(function() {
     spins++;
     let result = Math.floor(Math.random() * 6);
-    loadQuestion(categories[result].category)
+    let newResult = {0:0,1:5,2:4,3:3,4:2,5:1}
 
+    loadQuestion(categories[newResult[result]].category)
 
-    totalDegree = 61 * (result + 1);
+    totalDegree = 61 * (result);
     totalDegree += spins * 180 * 6;
     $('#wheel').css({'transform' : 'rotate(' + totalDegree + 'deg)'});
 
@@ -97,13 +98,13 @@ async function load() {
   let urlQuestion = allowOrigin + $('#txtUrlQuestion').val();
   let urlCategories = allowOrigin + $('#txtUrlCategories').val();
 
-  let response = await fetch(urlQuestion);
-  question = await response.json();
+  // let response = await fetch(urlQuestion);
+  // question = await response.json();
 
   response = await fetch(urlCategories);
   categories = await response.json();
 
-  for (var i = categories.length; i >0 ; i--) {
+  for (var i = 0; i < categories.length; i++) {
     $('.wheel .section').find('span').eq(i).html(categories[i].category);
   }
 }

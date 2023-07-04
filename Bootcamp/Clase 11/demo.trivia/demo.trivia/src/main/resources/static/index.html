@@ -1,8 +1,12 @@
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="script.js"></script>
-
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia - Bootcamp Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 <div id="dialog" class="dialog">
     <div class="question">¿Cuál es la capital de Francia?</div>
@@ -35,12 +39,12 @@
         <div class="arrow"></div>
         <div class="wheel">
             <div class="inner-wheel" id="wheel">
-                <div class="section"><span>Historia</span></div>
-                <div class="section"><span>Ciencia</span></div>
-                <div class="section"><span>Cultura</span></div>
-                <div class="section"><span>Deportes</span></div>
-                <div class="section"><span>Arte</span></div>
-                <div class="section"><span>Cine</span><span class="fa fa-birthday-cake"></span></div>
+                <div class="section"><span>#</span></div>
+                <div class="section"><span>#</span></div>
+                <div class="section"><span>#</span></div>
+                <div class="section"><span>#</span></div>
+                <div class="section"><span>#</span></div>
+                <div class="section"><span>#</span><span class="fa fa-birthday-cake"></span></div>
             </div>
             <div class="spin-button">
                 <span>&#x21BB;</span></div>
@@ -103,3 +107,8 @@
     <label>URL de categorias:  </label><input id="txtUrlCategories" type="text" value="http://localhost:8080/categories" /><br/>
     <button id="btnRefresh">Actualizar</button>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
