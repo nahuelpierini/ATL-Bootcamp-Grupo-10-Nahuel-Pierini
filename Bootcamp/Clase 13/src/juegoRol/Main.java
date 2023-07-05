@@ -129,17 +129,13 @@ public class Main {
     List<Personaje> buenPersonaje = new ArrayList<>();
     List<Personaje> malPersonaje = new ArrayList<>();
 
-        for (Personaje personaje : personajeList){
-           if (personaje.isPersonajeBueno()){
-               buenPersonaje.add(personaje);
-           } else {
-               malPersonaje.add(personaje);
-           }
-        }
+        elegirPersonajeBuenoOMalo(buenPersonaje, malPersonaje);
 
-    System.out.println("*****BATALLA*****");
+        System.out.println("*****BATALLA*****");
         System.out.println();
+        System.out.println("Atributos de los personajes antes de la pelea");
         mostrarPersonajes();
+        System.out.println();
 
             for (int i=0; i<3;i++) {
                 if (malPersonaje.get(0).puntosDeVida <= 0){
@@ -159,7 +155,17 @@ public class Main {
                 malPersonaje.get(0).atacar(buenPersonaje.get(0));
                 buenPersonaje.get(0).recibirDanio(malPersonaje.get(0).puntosDeAtaque);
             }
-        System.out.println("La batalla ha terminado, el resultado es : ");
+        System.out.println("Atributos de los personajes luego de la pelea");
         mostrarPersonajes();
+    }
+
+    private static void elegirPersonajeBuenoOMalo(List<Personaje> buenPersonaje, List<Personaje> malPersonaje) {
+        for (Personaje personaje : personajeList){
+           if (personaje.isPersonajeBueno()){
+               buenPersonaje.add(personaje);
+           } else {
+               malPersonaje.add(personaje);
+           }
+        }
     }
 }
